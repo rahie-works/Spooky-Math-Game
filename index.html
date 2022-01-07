@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Spooky Math Game</title>
+</head>
+<body>
+
+    <!-- First Section -->
+    <section class="startpage">
+        <div class="game-content">
+            <h1>SPOOKY MATH GAME</h1>
+            <span>Please enter name to start</span>
+            <input type="text" placeholder="Enter Player Name">
+            <button id="start-game">Start Game</button>
+            <button id="view-rules">View Rules</button>
+            <button id="highscore">High Score</button>
+            <button id="volumeBtn"> <img src="assets/volume.png" width="15"></button>
+        </div>
+    </section>
+    <!-- End: First Section -->
+
+    <!-- Game Rules -->
+    <section class="game-rules">
+        <div class="game-content">
+            <h1>Game Rules</h1>
+            <ul>
+                <h3>Enter a player name :</h3>
+                <li> The player’s name will be displayed on the High Scores page.</li>
+                <h3>Star the game:</h3>
+                <li> Tapping this button starts the game.</li>
+                <h3>How to play:</h3>
+                <li> Move the wizard to the line where you see the ghost with the exact question for the answer Wizard holds.</li>
+                <li>Tap 'Space' key to kill the ghost and move to next level once you reach the level.</li>
+                <li>Completing all five levels wins the game.</li>
+                <li>The wrong answer ends the game with the respective level as the score.</li>
+                <li>Top five players will be displayed in the High Score List.</li>
+            </ul>
+            <button onclick="window.location.reload()">Back</button>
+        </div>
+    </section>
+    <!-- END:Game Rules -->
+
+    <!-- HighScore -->
+    <section class="game-highscore">
+        <div class="game-content">
+            <h1>High Score</h1>
+            <div id="highscore-data"></div>
+            <button onclick="window.location.reload()">Back</button>
+        </div>
+    </section>
+    <!-- END: HighScore -->
+
+    <!-- Main Game -->
+    <section class="game">
+        <div class="game-area">
+            <div class="ghost" id="area1">
+                <div class="question">
+                    <img src="assets/ghost.png" alt="gost" width="70px" height="70px" />
+                    <span>10 x 11 = ?</span>
+                </div>
+            </div>
+            <div class="ghost" id="area2">
+                <div class="question">
+                    <img src="assets/ghost.png" alt="gost" width="70px" height="70px" />
+                    <span>10 x 11 = ?</span>
+                </div>
+            </div>
+            <div class="ghost" id="area3">
+                <div class="question">
+                    <img src="assets/ghost.png" alt="gost" width="70px" height="70px" />
+                    <span>10 x 11 = ?</span>
+                </div>
+            </div>
+            <div class="ghost" id="area4">
+                <div class="question">
+                    <img src="assets/ghost.png" alt="gost" width="70px" height="70px" />
+                    <span>10 x 11 = ?</span>
+                </div>
+            </div>
+            <div class="ghost" id="area5">
+                <div class="question">
+                    <img src="assets/ghost.png" alt="gost" width="70px" height="70px" />
+                    <span>10 x 11 = ?</span>
+                </div>
+                <div class="wizard">
+                    <img src="assets/wizard.png" alt="wizard" width="70px" height="70px" />
+                    <span>110</span>
+                </div>                
+            </div>
+        </div>
+
+        <div class="gameover">
+            <h1>Game Over!</h1>
+            <button onclick="window.location.reload()">Start Again</button>
+            <button onclick="displayHighScoreHandler()">Highscore</button>
+        </div>
+        
+        <div class="status">
+            <h3>Level <span id="level"></span> of 5</h3>
+            <h3>Time Remaining: <span id="time"></span></h3>
+        </div>
+    </section>
+    <!-- END: Main Game -->
+
+    <audio id="bgm" src="assets/horror_bgm.mp3" loop="true" autoplay="true" hidden="true"></audio>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
