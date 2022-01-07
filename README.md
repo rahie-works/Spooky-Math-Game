@@ -27,3 +27,10 @@ The game ends with options to start again and view high scores. Top five scores 
  progress. A similar project is developed on React-Native platform. The data for high score is stored in local storage of the browser.
  
  **************************************************************************************************************************************************
+![Opening Screen-Name and Audio ON](https://user-images.githubusercontent.com/84104966/148598067-0d7121f6-2513-4c2a-9164-59b3a0b81114.JPG)
+![Opening Screen-No Name](https://user-images.githubusercontent.com/84104966/148598086-ef6e8869-25c5-4d70-8a10-42ecafab3cf4.JPG)
+![Game Interface1](https://user-images.githubusercontent.com/84104966/148598097-3b899864-b20c-46e0-a03d-84f6cb79d534.JPG)
+![Game Interface2](https://user-images.githubusercontent.com/84104966/148598101-264ff7ef-a71a-4a50-a993-4ba00f2671ce.JPG)
+![GameOver](https://user-images.githubusercontent.com/84104966/148598106-dd0167f4-c139-4ec7-a25f-34f354ea2c76.JPG)
+![Game Win](https://user-images.githubusercontent.com/84104966/148598116-58a8a51e-8c60-4b3f-9358-91682e2f1a85.JPG)
+![HighScore](https://user-images.githubusercontent.com/84104966/148598130-8be7771e-4631-411c-b636-d4d7684499ec.JPG)
